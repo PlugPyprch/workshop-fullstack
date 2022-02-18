@@ -8,8 +8,9 @@ const app = express();
 app.use(express.static('./dist/AngularProPlug'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/AngularProPlug/'}),
+    res.sendFile('index.html', {root: 'dist/AngularProPlug/src'}),
 );
 
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
+//C:\Plug\SchoolCourse\FullStack3_2\AngularProPlug\src\index.html
